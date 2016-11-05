@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/wordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Word:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wordLabel"
+        android:layout_margin="5dp"
+        android:text="Word goes here"
+        android:textStyle="bold" 
+        android:selectAllOnFocus="true"/>
+
+    <TextView
+        android:id="@+id/meaningLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word"
+        android:layout_margin="5dp"
+        android:text="Meaning:" 
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/meaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meaningLabel"
+        android:layout_margin="5dp"
+        android:text="Meaning goes here" 
+        android:selectAllOnFocus="true"/>
+
+    <TextView
+        android:id="@+id/exampleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meaning"
+        android:layout_margin="5dp"
+        android:text="Example:" 
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exampleLabel"
+        android:layout_margin="5dp"
+        android:text="Example goes here"
+        android:textStyle="italic" 
+        android:selectAllOnFocus="true"/>
+
+    <Button
+        android:id="@+id/saveWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:onClick="saveWord"
+        android:text="Save.." />
+
+</RelativeLayout>
